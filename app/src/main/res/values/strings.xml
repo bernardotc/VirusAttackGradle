@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">1710771892527801</string>
+    <string name="app_name">Virus Attack!</string>
+    <string name="instructionsItem">Instructions</string>
+    <string name="instructions">A virus has been spotted in your system. Help your cells defend against this virus by CLICKING your screen whenever the virus is touching one of your cells. Be careful, the vius gets bigger when feeding from one of your cells. If the virus is big enough to enter one of your cells or touch both of them... sorry but you are ill and unable to keep playing. Watch out for the behaviour of the virus!</string>
+    <string name="modelKey">Model</string>
+    <string name="saveFile">savedGameData</string>
+    <string name="saveVitaminsFile">vitaminsData</string>
+    <string name="upgradesFile">upgradesData</string>
+    <string name="backTitleDialog">Warning! You will lose your progress.</string>
+    <string name="backMessageDialog">Are you sure?</string>
+    <string name="backMessagePositive">Unfortunately yes.</string>
+    <string name="backMessageNegative">Keep playing! What I were thinking?</string>
+    <string name="pausedMessage">Game Paused</string>
+    <string name="endMessage">End of game</string>
+    <string name="titleMessage">Bounce or Lose</string>
+    <string name="resumeMessage">Click to resume</string>
+    <string name="restartMessage">Click to restart</string>
+    <string name="startMessage">Start Game</string>
+    <string name="backMenu">Go to Main Menu</string>
+    <string name="finalScore">Your score is:</string>
+    <string name="doubleClicksMessage">Double points!</string>
+    <string name="clickMessage">Click!</string>
+    <string name="reduceMessage">Kill the virus!</string>
+    <string name="madnessMessage">Virus is mad!</string>
+    <string name="instructionsTitle">Your immune system is under attack!</string>
+    <string name="newVitamins">Vitamins won:</string>
+    <string name="goodClicks">Good clicks:</string>
+    <string name="badClicks">Bad clicks:</string>
+    <string name="accuracy">Accuracy:</string>
+    <string name="vitamins">100</string>
+    <string name="store">Immune Store</string>
+    <string name="upgradeMessage">Upgrade!</string>
+    <string name="LevelMessage">Level</string>
+    <string name="timeMessage">Duration:</string>
+    <string name="secondsMessage">seconds.</string>
+    <string name="probabilityMessage">Probability:</string>
+    <string name="postProbabilityMessage">every 50 points.</string>
+    <string name="secondMessage">every 1 second.</string>
+    <string name="toUpgradeMessage">-></string>
+    <string name="doubleUpTitle">Double Points</string>
+    <string name="reduceTitle">Reduce Virus Size</string>
+    <string name="madnessTitle">Control Virus Madness</string>
+</resources>

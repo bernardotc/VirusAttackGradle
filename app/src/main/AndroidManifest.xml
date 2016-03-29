@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bernardot.virusattack">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:label="@string/app_name" android:icon="@drawable/virus_launcher" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:name="com.example.bernardot.virusattack.MenuActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".VirusActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+        </activity>
+        <activity android:name="com.example.bernardot.virusattack.StoreActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+        </activity>
+        <activity android:name="com.example.bernardot.virusattack.InstructionsActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider1710771892527801"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+    </application>
+</manifest>

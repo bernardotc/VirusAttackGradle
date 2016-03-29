@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/main_background">
+
+    <TextView android:id="@+id/title_instructions"
+              android:layout_width="500dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="100dp"
+              android:text="@string/instructionsTitle"
+              android:textColor="#FFA500"
+              android:textAlignment="center"
+              android:textAllCaps="true"
+              android:textSize="40sp"/>
+
+    <TextView android:id="@+id/instructions"
+              android:layout_width="500dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="220dp"
+              android:text="@string/instructions"
+              android:textColor="#FFA500"
+              android:textAlignment="center"
+              android:textSize="34sp"/>
+
+    <RelativeLayout
+            android:id="@+id/button_menu"
+            android:layout_width="400dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="800dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+        <ImageView
+                android:id="@+id/img_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/button"/>
+
+        <TextView
+                android:id="@+id/text_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/backMenu"
+                android:textSize="40sp"
+                android:textColor="#000099"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </RelativeLayout>
+</RelativeLayout>

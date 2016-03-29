@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/main_background">
+
+    <TextView android:id="@+id/store_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="100dp"
+              android:text="@string/store"
+              android:textAllCaps="true"
+              android:textSize="60sp"/>
+
+    <RelativeLayout
+            android:id="@+id/vitamins_box"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+        <ImageView
+                android:id="@+id/img_box"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_blue"/>
+
+        <ImageView
+                android:id="@+id/img_vitamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/vitamins"/>
+
+        <TextView
+                android:id="@+id/text_vitamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_horizontal"
+                android:text="@string/vitamins"
+                android:textSize="25sp"
+                android:textColor="#DBED7E"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/doublePoints_box"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp">
+
+        <ImageView
+                android:id="@+id/imgDoublePoints_box"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_blue"/>
+
+        <ImageView
+                android:id="@+id/img_doublePoints"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/virus_double"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/doublePoints_upgrade_box"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="300dp">
+
+        <TextView android:id="@+id/store_upgrade_doublePoints"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:layout_centerHorizontal="true"
+                  android:layout_alignParentTop="true"
+                  android:text="@string/upgradeMessage"
+                  android:textSize="30sp"/>
+
+        <RelativeLayout android:id="@+id/button_doubleUp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true">
+
+            <ImageView
+                    android:id="@+id/imgDoublePoints_upgrade_box"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/button"/>
+
+            <ImageView
+                    android:id="@+id/img_vitamin_doublePoints_upgrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/vitamins"/>
+
+            <TextView android:id="@+id/vitamins_upgrade_doublePoints"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="#000099"
+                      android:text="@string/vitamins"
+                      android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/reduce_box"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp">
+
+        <ImageView
+                android:id="@+id/imgReduce_box"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_blue"/>
+
+        <ImageView
+                android:id="@+id/img_reduce"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/virus_reduce"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/reduce_upgrade_box"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="300dp">
+
+        <TextView android:id="@+id/store_upgrade_reduce"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:layout_centerHorizontal="true"
+                  android:layout_alignParentTop="true"
+                  android:text="@string/upgradeMessage"
+                  android:textSize="30sp"/>
+
+        <RelativeLayout android:id="@+id/button_reduce"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true">
+
+            <ImageView
+                    android:id="@+id/imgReduce_upgrade_box"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/button"/>
+
+            <ImageView
+                    android:id="@+id/img_vitamin_reduce_upgrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/vitamins"/>
+
+            <TextView android:id="@+id/vitamins_upgrade_reduce"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="#000099"
+                      android:text="@string/vitamins"
+                      android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/madness_box"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="600dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp">
+
+        <ImageView
+                android:id="@+id/imgMadness_box"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_blue"/>
+
+        <ImageView
+                android:id="@+id/img_madness"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/virus_mad"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/madness_upgrade_box"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="600dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="300dp">
+
+        <TextView android:id="@+id/store_upgrade_madness"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:layout_centerHorizontal="true"
+                  android:layout_alignParentTop="true"
+                  android:text="@string/upgradeMessage"
+                  android:textSize="30sp"/>
+
+        <RelativeLayout android:id="@+id/button_madness"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true">
+
+            <ImageView
+                    android:id="@+id/imgMadness_upgrade_box"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/button"/>
+
+            <ImageView
+                    android:id="@+id/img_vitamin_doublePoints_madness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/vitamins"/>
+
+            <TextView android:id="@+id/vitamins_upgrade_madness"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="#000099"
+                      android:text="@string/vitamins"
+                      android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/button_menu"
+            android:layout_width="400dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="800dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+        <ImageView
+                android:id="@+id/img_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/button"/>
+
+        <TextView
+                android:id="@+id/text_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/backMenu"
+                android:textSize="40sp"
+                android:textColor="#000099"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </RelativeLayout>
+</RelativeLayout>
