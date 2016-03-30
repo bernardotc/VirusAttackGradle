@@ -33,6 +33,7 @@ public class VirusActivity extends Activity {
     DisplayMetrics metrics;
     boolean portrait = true;
     boolean otherActivity = false;
+    int newVitamins;
 
     /**
      * Called when the activity is first created.
@@ -72,6 +73,9 @@ public class VirusActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+        if(Constants.close) {
+            System.exit(1);
+        }
         otherActivity = false;
         //setContentView(view);
         if (!Constants.backgroundMusic.isPlaying() || model.getGameState().equals(Constants.GameStates.END)) {
@@ -79,6 +83,7 @@ public class VirusActivity extends Activity {
             loadGame();
         } else {
             model.gameInit();
+            newVitamins = 0;
             setContentView(view);
         }
         game = new GameThread();
@@ -89,6 +94,9 @@ public class VirusActivity extends Activity {
     protected void onPause() {
         super.onPause();
         Constants.backgroundMusic.pause();
+        if (otherActivity) {
+            saveVitamins(newVitamins);
+        }
         //Constants.monsterSuction.release();
         //Constants.monsterMad.release();
         if (!getModel().getGameState().equals(Constants.GameStates.END) && !getModel().getGameState().equals(Constants.GameStates.START)) {
@@ -353,9 +361,8 @@ public class VirusActivity extends Activity {
                     accuracy = 0.0;
                 }
                 textAccuracy.setText(textAccuracy.getText() + " " + new DecimalFormat("#.00").format(accuracy) + "%");
-                int newVitamins = (int) (getModel().getScore() * accuracy / 100);
+                newVitamins = (int) (getModel().getScore() * accuracy / 100);
                 textNewVitamins.setText(textNewVitamins.getText() + " " + newVitamins);
-                saveVitamins(newVitamins);
 
                 ShareLinkContent content = new ShareLinkContent.Builder()
                         .setContentTitle("Playing Virus Attack!")

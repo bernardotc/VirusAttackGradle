@@ -186,9 +186,10 @@ public class MenuActivity extends Activity {
         }
     }
 
-    @Override
-    protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        System.out.println("On Activity Result");
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+            Constants.close = true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }
